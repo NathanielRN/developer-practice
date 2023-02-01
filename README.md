@@ -8,7 +8,7 @@
 
 #### Round Up
 
-## Good Questions
+## Data Structures
 
 ### Queues
 
@@ -25,3 +25,30 @@
 
 #### Breadth First Search
 
+### String Manipulation
+
+### Maps
+
+## Algorithms
+
+### Sorting
+
+#### Merge Sort
+
+#### Quick Sort
+
+#### Heap Sort
+
+### Permutations
+
+### Weaving
+
+## Watch out!
+
+### Duplicates
+
+### Empty items
+
+### Null Pointers
+
+### Index Bounds
