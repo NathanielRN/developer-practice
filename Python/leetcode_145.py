@@ -1,7 +1,5 @@
 # https://leetcode.com/problems/binary-tree-postorder-traversal/
 
-
-
 class Solution:
     def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         traversal, stack = [], [root]
