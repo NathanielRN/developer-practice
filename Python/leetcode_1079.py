@@ -14,7 +14,7 @@ class Solution:
 
 class Solution:
     # find ways to do:
-    # - scambled dont use everything (susbsets)
+    # - scrambled dont use everything (susbsets)
     # - scrambled use everything (permutations)
     # - ordered dont use everything (susbsets)
     # - ordered used everything with index (memo)
@@ -67,16 +67,14 @@ class Solution:
             one_char = int(s[index:index + 1])
 
             if one_char > 0 and one_char < 10:
-                total += 1
-                total += findGroupings(index + 1)
+                total += findGroupings(index + 1) * 2
 
             if index <= len(s) - 2:
 
                 two_char = int(s[index: index + 2])
 
                 if two_char > 9 and two_char < 27:
-                    total += 1
-                    total += findGroupings(index + 2)
+                    total += findGroupings(index + 2) * 2
 
             memo[index] = total
 
@@ -96,8 +94,6 @@ class Solution:
             total = 0
 
             # ab -> ab, ba, a, b
-
-            # aaa da/efaaa
 
             # remove duplicates
             seen_prefix_characters = set()

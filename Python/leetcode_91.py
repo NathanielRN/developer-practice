@@ -85,6 +85,7 @@ The test cases are generated so that the answer fits in a 32-bit integer.
 
 #    '1  3'
 # [1, 1, 2]
+# 1234238974/5
 class Solution:
     def numDecodings(self, s: str) -> int:
         if s[0] == '0':
@@ -92,11 +93,11 @@ class Solution:
 
         N = len(s)
 
-        dp = [0] * (N+1)
+        dp = [0] * (N + 1)
         dp[0] = 1
         dp[1] = 1
 
-        for i in range(2, N+1):
+        for i in range(2, N + 1):
             if 1 <= int(s[i-1:i]) <= 9:
                 dp[i] += dp[i-1]
 
